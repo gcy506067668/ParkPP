@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.park.letmesleep.ui.refreshlayout.WaveSwipeRefreshLayout
+        android:id="@+id/fragment_control_refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/fragment_collect_statuetext"
+                    android:gravity="center"
+                    android:text="下拉刷新"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:background="@drawable/view_mcontroltextview"
+                    android:textColor="@color/cpb_white"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp" />
+
+                <LinearLayout
+
+                    android:id="@+id/fragment_control_parksatue_layout"
+                    android:background="@drawable/view_mtextview"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:background="@drawable/view_mtextview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:text="停车场："
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/fragment_control_parkname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:background="@drawable/view_mtextview"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:text="车位号："
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/fragment_control_parkspace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:background="@drawable/view_mtextview"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:text="管理员电话："
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/fragment_control_parkphone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/view_mtextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <com.dd.CircularProgressButton
+                        android:id="@+id/fragment_control_mainrelay"
+                        android:textColor="@color/cpb_white"
+                        app:cpb_cornerRadius="48dp"
+                        app:cpb_iconComplete="@drawable/ic_action_accept"
+                        app:cpb_iconError="@drawable/ic_action_cancel"
+                        app:cpb_textIdle="栏  杆"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp" />
+
+                    <com.dd.CircularProgressButton
+                        android:id="@+id/fragment_control_calladmin"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/cpb_white"
+                        app:cpb_cornerRadius="48dp"
+                        app:cpb_iconComplete="@drawable/ic_action_accept"
+                        app:cpb_iconError="@drawable/ic_action_cancel"
+                        app:cpb_textIdle="联系管理员"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <com.dd.CircularProgressButton
+                        android:id="@+id/fragment_control_openlock"
+                        android:textColor="@color/cpb_white"
+                        app:cpb_cornerRadius="48dp"
+                        app:cpb_iconComplete="@drawable/ic_action_accept"
+                        app:cpb_iconError="@drawable/ic_action_cancel"
+                        app:cpb_textIdle="解锁车位"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp" />
+
+                    <com.dd.CircularProgressButton
+                        android:id="@+id/fragment_control_lock"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/cpb_white"
+                        app:cpb_cornerRadius="48dp"
+                        app:cpb_iconComplete="@drawable/ic_action_accept"
+                        app:cpb_iconError="@drawable/ic_action_cancel"
+                        app:cpb_textIdle="锁定车位"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.dd.CircularProgressButton
+                android:id="@+id/fragment_control_finishall"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/cpb_white"
+                app:cpb_cornerRadius="48dp"
+                app:cpb_iconComplete="@drawable/ic_action_accept"
+                app:cpb_iconError="@drawable/ic_action_cancel"
+                app:cpb_textIdle="停 车 结 束"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+        </LinearLayout>
+    </com.park.letmesleep.ui.refreshlayout.WaveSwipeRefreshLayout>
+
+</LinearLayout>

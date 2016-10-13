@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@android:color/holo_blue_dark">
+
+        <LinearLayout
+            android:id="@+id/left_container"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:minWidth="48dp"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:src="@drawable/title_back_white"
+                android:id="@+id/left_button"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:maxLength="12"
+            android:ellipsize="end"
+             />
+
+
+        <LinearLayout
+            android:id="@+id/right_container"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:minWidth="48dp"
+            android:orientation="horizontal"
+           >
+            <ImageView
+                android:visibility="gone"
+                android:src="@drawable/collect_fragment_unselected"
+                android:id="@+id/right_button"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

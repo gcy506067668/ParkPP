@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:orientation="vertical"
+    android:background="@drawable/view_mpading">
+
+    <com.park.letmesleep.ui.widget.TitleBar
+        android:id="@+id/activity_main_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.park.letmesleep.ui.widget.TitleBar>
+    <FrameLayout
+        android:id="@+id/id_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <include layout="@layout/view_main_bottom"></include>
+
+</LinearLayout>
